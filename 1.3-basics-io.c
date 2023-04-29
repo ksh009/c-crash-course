@@ -29,6 +29,21 @@ int main()
 
     printf("You chose the value %d\n", radius);
 
+    // Strings
+    /*
+        To store strings a character array must be used
+        \0 (null terminator) Indicates end of string (Related to memory mgmt)
+            - Always needs to be there
+            - char name[20] null terminator takes one spot
+                - Meaning above var array can only store 19 chars in string
+    */
+    printf("Enter your name: ");
+
+    char name[20];       // char array of 20 chars
+    scanf("%19s", name); // No & required here as it is a char array. Arrays decay to pointers
+
+    printf("Your name is: %s\n", name);
+
     return 0;
 }
 
