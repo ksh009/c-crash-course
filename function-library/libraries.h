@@ -5,6 +5,7 @@
 #define HEADER_FILE
 
 int factorial(int n);
+
 #endif
 
 /*
