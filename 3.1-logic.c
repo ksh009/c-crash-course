@@ -9,13 +9,15 @@
 */
 int main()
 {
-    if (false)
+    int age = 17;
+
+    if (age > 17)
     {
-        printf("this is true\n");
+        printf("this is adult\n");
     }
     else
     {
-        printf("This is false");
+        printf("This is not adult");
     }
     return 0;
 }
