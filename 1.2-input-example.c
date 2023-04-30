@@ -34,3 +34,7 @@ int main()
 
     return 0;
 }
+
+/*
+    Use the scanf() function to get a single word as input, and use fgets() for multiple words.
+*/
