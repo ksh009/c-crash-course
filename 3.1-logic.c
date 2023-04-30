@@ -11,7 +11,7 @@ int main()
 {
     int age = 17;
 
-    if (age > 17)
+    if (!(age > 17))
     {
         printf("this is adult\n");
     }
