@@ -9,9 +9,13 @@
 */
 int main()
 {
-    if (true)
+    if (false)
     {
         printf("this is true\n");
+    }
+    else
+    {
+        printf("This is false");
     }
     return 0;
 }
