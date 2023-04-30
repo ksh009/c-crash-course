@@ -23,11 +23,11 @@ int main()
         - gives a pointer
             - EXCEPTION: When woring with arrays then "&" not required.
     */
-    printf("Give me a radius: ");
-    int radius;
-    scanf("%d", &radius);
+    // printf("Give me a radius: ");
+    // int radius;
+    // scanf("%d", &radius);
 
-    printf("You chose the value %d\n", radius);
+    // printf("You chose the value %d\n", radius);
 
     // Strings
     /*
@@ -37,12 +37,12 @@ int main()
             - char name[20] null terminator takes one spot
                 - Meaning above var array can only store 19 chars in string
     */
-    printf("Enter your name: ");
+    // printf("Enter your name: ");
 
-    char name[20];       // char array of 20 chars
-    scanf("%19s", name); // No & required here as it is a char array. Arrays decay to pointers
+    // char name[20];       // char array of 20 chars
+    // scanf("%19s", name); // No & required here as it is a char array. Arrays decay to pointers
 
-    printf("Your name is: %s\n", name);
+    // printf("Your name is: %s\n", name);
 
     return 0;
 }
