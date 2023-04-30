@@ -44,7 +44,24 @@ int main()
     printf("b = %d\n", b); // b gets assigned to first
     printf("a = %d\n", a); // Then a is incremented
 
+    printf("pre increment:\n");
+    b = 5;
+    a = 5;
+    b = ++a;
+    printf("b = %d\n", b); // b gets assigned to first
+    printf("a = %d\n", a); // Then a is incremented
+
     // Assignment Operators (binary) =, +=, -=, /=, *=, %=
+    printf("Assignment Operators:\n");
+    a = 5;
+    b = 5;
+    b += a;
+    printf("b += a = %d\n", b); // 5 + 5
+    a *= 30;
+    printf("b *= 30 = %d\n", a); // 5 * 30
+    a %= 140;
+    printf("a %%= 140 = %d\n", a); // 150 % 140
+
     // Comparison Operators (binary) ==, !=, <, >, <=, >=
     // Logical Operators (binary) &&, ||, !
     // Conditional operator (ternary) ? :
