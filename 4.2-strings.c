@@ -9,6 +9,10 @@ int main()
     char str[] = "Hello, world!";
     printf("%s", str);
 
+    // Printing a string (Limit)
+    char str[20]; // '\0'
+    printf("19%s", str);
+
     // Getting input from user as a string:
     char str1[100];
     printf("Enter a string: ");
