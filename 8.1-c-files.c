@@ -21,3 +21,17 @@ int main()
 
     return 0;
 }
+
+// Extra notes
+/*
+    Closing the file
+        Did you notice the fclose() function in our example above?
+
+        This will close the file when we are done with it.
+
+        It is considered as good practice, because it makes sure that:
+
+        Changes are saved properly
+        Other programs can use the file (if you want)
+        Clean up unnecessary memory space
+*/
