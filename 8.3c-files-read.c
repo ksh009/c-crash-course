@@ -5,7 +5,20 @@ int main()
     FILE *fptr;
 
     // Open a file in read mode
-    fptr = fopen("filename.txt", "r");
+    fptr = fopen("filenames.txt", "r");
+
+    /*
+        Good Practice
+            If you try to open a file for reading that does not exist, the fopen() function will return NULL.
+
+            Tip: As a good practice, we can use an if statement to test for NULL, and print some text instead (when the file does not exist):
+    */
+
+    // Print some text if the file does not exist
+    if (fptr == NULL)
+    {
+        printf("Not able to open the file.");
+    }
 
     /*
         This will make the filename.txt opened for reading.
