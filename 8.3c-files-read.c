@@ -8,19 +8,6 @@ int main()
     fptr = fopen("filenames.txt", "r");
 
     /*
-        Good Practice
-            If you try to open a file for reading that does not exist, the fopen() function will return NULL.
-
-            Tip: As a good practice, we can use an if statement to test for NULL, and print some text instead (when the file does not exist):
-    */
-
-    // Print some text if the file does not exist
-    if (fptr == NULL)
-    {
-        printf("Not able to open the file.");
-    }
-
-    /*
         This will make the filename.txt opened for reading.
 
             It requires a little bit of work to read a file in C. Hang in there! We will guide you step-by-step.
@@ -34,13 +21,26 @@ int main()
     char myString[100];
 
     /*
-        In order to read the content of filename.txt, we can use the fgets() function.
+        Good Practice
+            If you try to open a file for reading that does not exist, the fopen() function will return NULL.
 
-            The fgets() function takes three parameters:
-                The first parameter specifies where to store the file content, which will be in the myString array we just created.
-                The second parameter specifies the maximum size of data to read, which should match the size of myString (100).
-                The third parameter requires a file pointer that is used to read the file (fptr in our example).
+            Tip: As a good practice, we can use an if statement to test for NULL, and print some text instead (when the file does not exist):
     */
+
+    // Print some text if the file does not exist
+    if (fptr == NULL)
+    {
+        printf("Not able to open the file.");
+    }
+
+    /*
+    In order to read the content of filename.txt, we can use the fgets() function.
+
+        The fgets() function takes three parameters:
+            The first parameter specifies where to store the file content, which will be in the myString array we just created.
+            The second parameter specifies the maximum size of data to read, which should match the size of myString (100).
+            The third parameter requires a file pointer that is used to read the file (fptr in our example).
+*/
     fgets(myString, 100, fptr);
 
     /*
@@ -64,4 +64,32 @@ int main()
 
     // Close the file
     fclose(fptr);
+
+    /*
+        If else example
+
+        FILE *fptr;
+
+        // Open a file in read mode
+        fptr = fopen("filename.txt", "r");
+
+        // Store the content of the file
+        char myString[100];
+
+        // If the file exist
+        if(fptr != NULL) {
+
+        // Read the content and print it
+        while(fgets(myString, 100, fptr)) {
+            printf("%s", myString);
+        }
+
+        // If the file does not exist
+        } else {
+        printf("Not able to open the file.");
+        }
+
+        // Close the file
+        fclose(fptr);
+    */
 }
