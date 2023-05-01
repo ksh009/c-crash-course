@@ -21,3 +21,8 @@ int main()
     // Close the file
     fclose(fptr);
 }
+
+/*
+    Note: Just like with the w mode; if the file does not exist, the a mode will create a new file with the "appended" content.
+
+*/
