@@ -90,3 +90,9 @@ int main()
         - Storing data in a buffer or array that may grow or shrink in size during program execution, such as in a dynamic string implementation
         - Allocating memory for a program's heap, which is used for dynamic allocation of objects and data during runtime.
 */
+
+/*
+    The "&" character is used in the `scanf` function to get the memory address of a variable where the input should be stored. In other words, the "&" character is the "address-of" operator in C, and it is used to retrieve the memory location of a variable.
+
+        In the case of the line `scanf("%d", &n);`, the `scanf` function expects an integer input from the user and stores the input in the memory address of the variable `n`. Therefore, the "&" character is used to pass the memory address of `n` to the `scanf` function, so that it knows where to store the user input.
+*/
